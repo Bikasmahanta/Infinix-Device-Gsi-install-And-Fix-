@@ -18,7 +18,7 @@ PLEASE READ RELATED SECTION IN README CAREFULLY AND THROUGHLY.
 <br>
 •
 
-<h1>Infinix Zero 5G X 6815</h1>
+<h1>Infinix Zero 5G X6815</h1>
 <b>Testing Device</b> :Infinix Zero 5G (X6815)
 
 
@@ -54,6 +54,7 @@ To reboot device to fastboot-D mode
 	fastboot reboot fastboot
 
 Rebooting into fastboot                            OKAY [  0.007s]
+
 < waiting for any device >
 Finished. Total time: 23.184s
 
@@ -61,11 +62,11 @@ first Erase System And TRy it gsi to flash Is it showing Error Somthing LIke Thi
 
 	fastboot erase system
 
-#Log
 C:\platform-tools>fastboot erase system
-Erasing 'system_a'                                 OKAY [  0.050s]
-Finished. Total time: 0.085s
 
+Erasing 'system_a'                                 
+OKAY [  0.050s]
+Finished. Total time: 0.085s
 
 
 
@@ -86,26 +87,43 @@ C:\platform-tools>fastboot flash system gsi.img
 
 
 Resizing 'system_a'                                OKAY [  0.009s]
+
 Sending sparse 'system_a' 1/9 (262116 KB)          OKAY [  8.958s]
+
 Writing 'system_a'                                 OKAY [  0.677s]
+
 Sending sparse 'system_a' 2/9 (262116 KB)          OKAY [  8.821s]
+
 Writing 'system_a'                                 OKAY [  0.594s]
+
 Sending sparse 'system_a' 3/9 (262100 KB)          OKAY [  8.793s]
+
 Writing 'system_a'                                 OKAY [  0.604s]
+
 Sending sparse 'system_a' 4/9 (262124 KB)          OKAY [  8.538s]
+
 Writing 'system_a'                                 OKAY [  0.603s]
+
 Sending sparse 'system_a' 5/9 (262124 KB)          OKAY [  8.632s]
+
 Writing 'system_a'                                 OKAY [  0.606s]
+
 Sending sparse 'system_a' 6/9 (262124 KB)          OKAY [  8.730s]
+
 Writing 'system_a'                                 OKAY [  0.612s]
+
 Sending sparse 'system_a' 7/9 (262124 KB)          OKAY [  8.691s]
+
 Writing 'system_a'                                 OKAY [  0.621s]
+
 Sending sparse 'system_a' 8/9 (262124 KB)          OKAY [  8.646s]
+
 Writing 'system_a'                                 OKAY [  0.650s]
+
 Sending sparse 'system_a' 9/9 (205284 KB)          OKAY [  6.798s]
+
 Writing 'system_a'                                 OKAY [  0.652s]
 Finished. Total time: 87.538s
-
 
 
 
@@ -115,7 +133,9 @@ Please wait till verification is disabled on both slots.
 	fastboot --disable-verity --disable-verification flash vbmeta vbmeta.img
 
  C:\platform-tools>fastboot flash vbmeta_a vbmeta.img
+
 Sending 'vbmeta_a' (4 KB)                          OKAY [  0.031s]
+
 Writing 'vbmeta_a'                                 OKAY [  0.009s]
 Finished. Total time: 0.091s
 
@@ -124,7 +144,9 @@ Finished. Total time: 0.091s
 	fastboot reboot recovery
 
 C:\platform-tools>fastboot reboot
-Rebooting                                          OKAY [  0.000s]
+
+Rebooting                                          
+OKAY [  0.000s]
 Finished. Total time: 0.016s
 
 
@@ -139,7 +161,7 @@ Once in recovery select Wipe and Factory Reset
 <br>
 
 
-NOT EVERY GSI IS BUG FREE - Root is required to fix some of the
+#NOT EVERY GSI IS BUG FREE - Root is required to fix some of the
 
 
 
